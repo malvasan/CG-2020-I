@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9.x FATAL_ERROR)
-project(Lab01)
+project(Ejercicio 1)
 
 #For adding source files
 file(GLOB_RECURSE SOURCE_FILES
