@@ -112,13 +112,14 @@ int main()
 
 		processInput(window);
 
-		glClearColor(0.2f, 1.0f, 1.0f, 1.0f);
+		glClearColor(0.2f, 0.2f, 1.0f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glUseProgram(shaderProgram);
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-		
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 
